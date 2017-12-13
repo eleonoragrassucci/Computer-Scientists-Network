@@ -1,4 +1,5 @@
-# HW4
+# Algorithmic Methods of Data Mining Homework 4
+# Valerio Guarrasi, Eleonora Grassucci, Shamrun Karimov
 
 The repository has three files:
 
