@@ -26,7 +26,7 @@ Check the .pdf file to see the results and the plots.
 
 Here, we wrote a function named neighbors to evaluate the hop distance from Aris.
 This function saves into a list "to_visit" the neighbors of the nodes it visits and then it takes the node to visit into account.
-It repeats this steps until the d-distance set from the input.
+It repeats these steps until the d-distance set from the input.
 
 In particular, as you can see in the pdf file, this function is faster than the newtorkx one.
 
