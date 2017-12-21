@@ -161,7 +161,7 @@ def groupNumber(G, Gcon, similar):
     inp = list(map(int,input("Insert author id or enter to stop: ").split()))
     #inp = [234889, 523286, 523285, 256177, 114821] 
     if len(inp)>21:
-        print("too many")
+        print("Too many nodes!")
     else:
         GROUP_NUMBER = {} 
         dijkstra_list = [] #list of dikstra dictionaries for each author in the input list
@@ -184,7 +184,7 @@ def groupNumber(G, Gcon, similar):
             except: #for the isolated nodes
                 pass
             if len(groups) == 0:
-                GROUP_NUMBER[nodeG] = "isn't connected to any of these nodes"
+                GROUP_NUMBER[nodeG] = "This node is not connected to any of these nodes."
                 #print("node "+str(nodeG)+" isn't connected to any of these nodes")
             else:
                 result = min(groups)
