@@ -31,6 +31,12 @@ It repeats these steps until the d-distance set from the input.
 
 In particular, as you can see in the pdf file, this function is faster than the newtorkx one.
 
-### 3 a.
+### 3
 
-cbcbcb
+To make everything faster, we want to make a smaller graph without loosing any information. First we removed the isolated nodes, beacouse, since we have to work on the distance between two nodes, we already know that the distance between any node and a isolated one doesn't exixt (since the nodes can't be connected). Then, by using the similar dictionary, we removed every node, except for one, from every group of identical nodes. We did this beacouse the distance between any node and two identical node is the same. So if you have one distance, you automatically have even the second distance. This procedure reduces the complexity of the graph.
+
+To calculate the shortest distance between any couple of nodes, we used Dijkstra algorithm, that gives in output a dictionary of the shortest path lenghts between one node and all the other ones. To make everyhting really fast we used the heapq library with the heap structure.
+
+### 3.a
+
+Here we used the function distances_aris, that by recalling the Dijkstra's algorithm, we find the shortest path length from Aris to every other node that is connected to him. We give as output the distance between the node given in input and Aris. Since we took out a few nodes, we always have to check if the node that we ask in input doesn't exixt or was removed. If it was removed, then we look at it as if it is the node that we kept from it's identical group.
